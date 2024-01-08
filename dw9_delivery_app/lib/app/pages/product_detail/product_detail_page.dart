@@ -62,10 +62,7 @@ class _ProductDetailPageState
                     ),
                   );
                 },
-                child: Text(
-                  'Confirmar',
-                  style: context.textStyles.textBold,
-                ),
+                child: Text('Confirmar', style: context.textStyles.textBold),
               )
             ],
           );
@@ -163,9 +160,8 @@ class _ProductDetailPageState
                           children: [
                             Text(
                               'Adicionar',
-                              style: context.textStyles.textExtraBold.copyWith(
-                                fontSize: 13,
-                              ),
+                              style: context.textStyles.textExtraBold
+                                  .copyWith(fontSize: 13, color: Colors.white),
                             ),
                             const SizedBox(
                               width: 10,
@@ -177,7 +173,8 @@ class _ProductDetailPageState
                                 minFontSize: 5,
                                 maxLines: 1,
                                 textAlign: TextAlign.center,
-                                style: context.textStyles.textExtraBold,
+                                style: context.textStyles.textExtraBold
+                                    .copyWith(color: Colors.white),
                               ),
                             ),
                           ],
